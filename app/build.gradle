@@ -32,6 +32,6 @@ dependencies {
     compile project(":myandroidlibrary")
     compile 'com.android.support:appcompat-v7:22.2.1'
     // Added for AdMob
-    compile 'com.google.android.gms:play-services-ads:7.5.0'
+    freeCompile 'com.google.android.gms:play-services-ads:7.5.0'
     compile project(path: ':backend', configuration: 'android-endpoints')
 }

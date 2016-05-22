@@ -10,9 +10,6 @@ import android.widget.ProgressBar;
 import com.example.himanshu.myapplication.backend.jokeApi.JokeApi;
 import com.example.himanshu.myapplication.backend.jokeApi.model.JokeBean;
 import com.example.matteo.myandroidlibrary.JokeDisplayActivity;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.example.himanshu.myapplication.backend.jokeApi.JokeApi;
@@ -26,7 +23,6 @@ public class EndpointAsyncTask extends AsyncTask<Pair<Context, String>, Void, St
     private static JokeApi mJokeApi = null;
     private Context mContext;
     private String mResult;
-    private InterstitialAd mInterstitialAd;
     private ProgressBar mProgressBar;
 
     public EndpointAsyncTask(Context context, ProgressBar progressBar) {
